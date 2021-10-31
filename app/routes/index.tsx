@@ -18,6 +18,7 @@ const Root = () => (
       name="首页"
       component={HomeScreen}
       options={() => ({
+        headerShown: false,
         tabBarIcon: ({color, size}) => (
           <AntDesign name="home" color={color} size={size} />
         ),

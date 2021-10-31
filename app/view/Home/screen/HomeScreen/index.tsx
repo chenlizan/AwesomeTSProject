@@ -1,19 +1,8 @@
 import React from 'react';
-import {Button, View, Text, StyleSheet} from 'react-native';
-import {useSelector, useDispatch} from 'react-redux';
+import {WebView} from 'react-native-webview';
 
 export default function HomeScreen() {
   return (
-    <View style={styles.mine_screen}>
-      <Text>HomeScreen!</Text>
-    </View>
+    <WebView source={{uri: 'file:///android_asset/local-site/index.html'}} />
   );
 }
-
-const styles = StyleSheet.create({
-  mine_screen: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
